@@ -20,7 +20,7 @@ const Header = (title, date, temp) => {
   dateEl.classList.add('date');
   dateEl.textContent = date;
   titleEl.textContent = title;
-  tempEl.classList('temp');
+  tempEl.classList.add('temp');
   tempEl.textContent = temp;
 
   headerEl.appendChild(dateEl);
@@ -38,7 +38,7 @@ const headerAppender = (selector) => {
   // It should append the header to the element in the DOM that matches the given selector.
   //
 
-  document.querySelector(selector).appendChild(Header(title, date, temp));
+  document.querySelector(selector).appendChild(Header('Title', '01/24/21', '32'));
 }
 
 export { Header, headerAppender }
