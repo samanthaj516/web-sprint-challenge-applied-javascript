@@ -18,7 +18,7 @@ const Tabs = (topics) => {
 
   const topicsElem = document.createElement('div');
   topicsElem.classList.add('topics');
-  topics.map((topic) => {
+  topics.forEach((topic) => {
     const div = document.createElement('div');
     div.classList.add('tab');
     div.textContent = topic;
